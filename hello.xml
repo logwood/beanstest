@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean name="A" class="(包名随意).A">
+        <property name="str" value="微光工作室"/>
+        <property name="num" value="1"/>
+    </bean>
+
+    <bean name="B" class="(包名随意).B">
+        <property name="refA" ref="A"/>
+    </bean>
+</beans>

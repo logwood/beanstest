@@ -9,7 +9,6 @@
     <name>Spring OSGi Bundle</name>
     <version>1.0-SNAPSHOT</version>
     <url>http://www.springframework.org/osgi</url>
-
     <properties>
         <slf4j.version>1.5.0</slf4j.version>
         <spring.maven.artifact.version>2.5.6.SEC01</spring.maven.artifact.version>
@@ -193,8 +192,16 @@ Spring-DM-Version: ${pom.version}
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
 
-    <!-- alternative maven-bundle-plugin configuration -->
+            <!-- alternative maven-bundle-plugin configuration -->
     <!-- see http://felix.apache.org/site/maven-bundle-plugin-bnd.html for more info -->
 
     <!--
