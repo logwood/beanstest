@@ -48,6 +48,3 @@ B -->|进行| D[IocContainter.java]
 C -->|进行| E[SAXParSerHandler.java]
 
 ```
-## Tips
-
-1. 如果要看6A TASK3,4题的代码，[点击这里](https://github.com/logwood/beanstest). 如果想了解结构，请移步beanstest文件夹readme.md文件
